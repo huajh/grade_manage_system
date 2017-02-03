@@ -1,0 +1,449 @@
+insert into 系统管理员hjh(用户名hjh) values('huajh')
+
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_cs','计算机科学与技术学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_ce','化学工程与材料学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_jdxy','机械工程学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_ie','信息工程学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_lxy','理学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_cba','经贸管理学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_jdxy','建筑工程学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_bee','生物与环境工程学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_jxxy','健行学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_law','法学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_fl','外国语学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_rwxy','人文学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_yxy','药学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_gjxy','国际学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_art','艺术学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_sppa','政治与公共管理学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_cj','成人教育学院');
+insert into 学院hjh(学院编号hjh,学院名称hjh) values('zjut_zjc','之江学院');
+
+
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('cs_01','软件工程','zjut_cs');
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('cs_02','计算机科学与技术','zjut_cs');
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('cs_03','数字媒体','zjut_cs');
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('cs_04','计算机+自动化','zjut_cs');
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('cs_05','网络工程','zjut_cs');
+
+
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010101',0901,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010102',0902,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh)values('2009010103',0903,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010104',0904,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010105',0905,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010106',0906,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010107',0907,'cs_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010108',0908,'cs_01');
+
+
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010201',0901,'cs_02');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010202',0902,'cs_02');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010203',0903,'cs_02');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010204',0904,'cs_02');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010205',0905,'cs_02');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010206',0906,'cs_02');
+
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010301',0901,'cs_03');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010302',0902,'cs_03');
+
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010401',0901,'cs_04');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010402',0902,'cs_04');
+
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010501',0901,'cs_05');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009010502',0902,'cs_05');
+
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010101','安连杰','男','河南省','2009010101');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010102','胡超','男','浙江省宁波市','2009010101');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010103','蔡琪琪','男','浙江省湖州市','2009010101');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010104','陈谦','男','浙江省台州市','2009010101');
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010205','仇中','男','浙江省杭州市','2009010102');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010206','何俊丽','女','浙江省金华市','2009010102');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010207','王超','男','浙江省宁波市','2009010102');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010208','王成','男','浙江省诸暨市','2009010102');
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010301','吴晓蓓','男','浙江省宁波市','2009010103');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010302','顾唯超','男','浙江省宁波市','2009010103');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010303','潘永彦','男','浙江省宁波市','2009010103');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010304','吴利波','男','浙江省宁波市','2009010103');
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010401','陈安郎','男','浙江省湖州市','2009010104');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010402','邓凡','男','浙江省台州市','2009010104');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010403','赖婷','男','浙江省杭州市','2009010104');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010404','高蕊','男','浙江省宁波市','2009010104');
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010501','陈安郎','男','浙江省宁波市','2009010105');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010502','邓凡','男','浙江省衢州市','2009010105');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010503','赖婷','男','浙江省诸暨市','2009010105');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901010504','薛炜宜','男','浙江省杭州市','2009010105');
+
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040101','黄琼芳','女','贵州省','2009010401');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040102','金佳华','男','浙江省舟山市','2009010401');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040103','王荣斌','男','浙江省杭州市','2009010401');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040104','华俊豪','男','浙江省衢州市','2009010401');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040105','杨绍漂','男','浙江省温州市','2009010401');
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040201','黄杰','男','浙江省金华市','2009010402');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040202','金佳华','男','浙江省舟山市','2009010402');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040203','陈东东','男','浙江省杭州市','2009010402');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040204','郑俊飞','男','浙江省衢州市','2009010402');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901040205','皇甫晓洁','女','浙江省杭州市','2009010402');
+
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020101','唐宝','男','浙江省杭州市','2009010201');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020202','刘丽宾','女','浙江省温州市','2009010202');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020304','顾杰杰','女','浙江省衢州市','2009010203');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020403','费明杰','女','浙江省舟山市','2009010204');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020511','陈苗','女','浙江省温州市','2009010205');
+
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020502','胡仁杰','男','浙江省杭州市','2009010205');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020204','谢涛','男','浙江省衢州市','2009010202');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020105','陈博','男','浙江省舟山市','2009010201');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020313','朱陈晨','男','浙江省温州市','2009010203');
+insert into 学生hjh(学生编号hjh,姓名hjh,性别hjh,生源地hjh,班级编号hjh) values('200901020404','邢海波','男','浙江省温州市','2009010204');
+
+
+
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010001','计算机组成原理','考试',64,4,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010002','汇编语言程序设计','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010003','数据结构','考试',64,4,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010004','C++程序设计','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010005','离散数学','考试',64,4,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010006','计算机网络原理','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010007','数据库原理及应用','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010008','自动控制原理','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010009','数字电路与数字逻辑','考试',64,4,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010010','人工智能导论','考试',32,2,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010011','Java程序设计','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010012','无线传感器网络','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010013','计算机图形学','考试',48,3,'zjut_cs');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('010014','算法分析与设计','考查',48,3,'zjut_cs');
+
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('050001','大学物理C','考试',48,3,'zjut_lxy');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('030001','工程图学C','考试',32,2,'zjut_jdxy');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('120001','美学概论','考试',32,2,'zjut_rwxy');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('160001','科学方法论','考试',32,2,'zjut_sppa');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('050002','高等数学A','考试',96,6,'zjut_lxy');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('160002','中国近现代史纲要','考试',32,2,'zjut_sppa');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('160003','思想道德修养法律基础','考试',48,3,'zjut_sppa');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('160004','马克思主义基本原理','考试',48,3,'zjut_sppa');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('050003','线性代数B','考试',32,2,'zjut_lxy');
+insert into 课程hjh(课程编号hjh,课程名称hjh,考核方式hjh,学时hjh,学分hjh,学院编号hjh) values('050004','概率论与数理统计B','考试',48,3,'zjut_lxy');
+
+
+
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010101','陈胜勇','男','博士','教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010102','范兴刚','男','博士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010103','何剑春','男','硕士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010104','蒋一波','男','博士','讲师','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010105','龙胜春','女','博士','讲师','zjut_cs');
+
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010201','李清水','男','博士','讲师','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010202','王卫红','男','博士','学院领导','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010203','李曲','男','博士','讲师','zjut_cs');
+
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010301','赵小敏','男','博士','讲师','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010302','张元鸣','男','硕士','讲师','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010303','叶蕾','女','硕士','讲师','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010304','毛国红','女','硕士','讲师','zjut_cs');
+
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010401','于明远','男','博士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010402','王英姿','女','博士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010403','沈瑛','女','博士','副教授','zjut_cs');
+
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010501','王万良','男','博士','教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010502','高飞','男','博士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010503','刘文捷','女','博士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010504','刘盛','男','博士','副教授','zjut_cs');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010505','管秋','女','博士','副教授','zjut_cs');
+
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('050105','原俊青','女','硕士','讲师','zjut_lxy');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('160501','罗许成','男','博士','副教授','zjut_sppa');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('120307','王兴旺','男','硕士','副教授','zjut_rwxy');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('110103','郭铭莉','女','硕士','讲师','zjut_fl');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('050402','段向阳','男','博士','副教授','zjut_lxy');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('160203','韩晓华','女','博士','副教授','zjut_sppa');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('050307','方兴','男','硕士','副教授','zjut_lxy');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('050201','聂青苗','女','博士','讲师','zjut_lxy');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010207','徐利光','男','硕士','副教授','zjut_lxy');
+insert into 教师hjh(教师编号hjh,姓名hjh,性别hjh,学历hjh,职称hjh,学院编号hjh) values('010505','管秋','女','博士','副教授','zjut_cs');
+
+
+
+
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010001','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010002','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010003','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010004','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010006','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010007','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010008','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010009','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010010','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010011','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010012','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010013','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','010014','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','050001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','030001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','120001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','160001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','050002','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','160004','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','160003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','160002','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','050003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_01','050004','2009-2010(1)');
+
+
+
+
+
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010001','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010002','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010003','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010004','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010006','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010007','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010008','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010009','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010010','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010011','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010012','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010013','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','010014','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','050001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','030001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','120001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','160001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','050002','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','160004','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','160003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','160002','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','050003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_02','050004','2009-2010(1)');
+
+
+
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010001','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010002','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010003','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010004','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010006','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010007','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010008','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010009','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010010','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010011','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010012','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010013','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','010014','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','050001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','030001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','120001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','160001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','050002','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','160004','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','160003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','160002','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','050003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_03','050004','2009-2010(1)');
+
+
+
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010001','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010002','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010003','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010004','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010006','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010007','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010008','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010009','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010010','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010011','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010012','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010013','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','010014','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','050001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','030001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','120001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','160001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','050002','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','160004','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','160003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','160002','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','050003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_04','050004','2009-2010(1)');
+
+
+
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010001','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010002','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010003','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010004','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010006','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010007','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010008','2010-2011(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010009','2010-2011(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010010','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010011','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010012','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010013','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','010014','2011-2012(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','050001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','030001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','120001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','160001','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','050002','2009-2010(2)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','160004','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','160003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','160002','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','050003','2009-2010(1)');
+insert into 开设hjh(专业编号hjh,课程编号hjh,开课学期hjh) values('cs_05','050004','2009-2010(1)');
+
+
+
+
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('abcaa090101','010001','2009010101','010101','郁B104/周一3，4节；法A105/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('bcdaa090102','010002','2009010101','010103','郁A110/周一1,2节；广A401/周四8,9节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('cdeaa090103','010003','2009010101','010201','法B102/周五3,4节；畅远313/周二6,7节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('defaa090102','010004','2009010101','010202','广B102/周三6,7节；郁A211/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('efgaa090104','010005','2009010101','010203','法A104/周四8,9节；郁A311/周二4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('fghaa090101','010006','2009010101','010301','畅远102/周三10,11节；法A303/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ghiaa090104','010007','2009010101','010302','郁B101/周一3,4节；博C315/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('hijaa090105','010008','2009010101','010303','广B214/周四10,11节；法B215/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ijkaa090103','010009','2009010101','010403','广B111/周二1,2节；法A315/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('jklaa090101','010010','2009010101','010304','广B103/周一8,9节；郁B304/周二5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('klmaa090103','010011','2009010101','010402','健B104/周五3,4节；健B105/周五4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('lmnaa090104','010012','2009010101','010502','健B102/周四6,7节；畅远103/周二1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('mnoaa090101','010013','2009010101','010501','健B110/周五8,9节；博C104/周四5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('nopaa090105','010014','2009010101','010401','郁B111/周二6,7节；广B103/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('opqaa090108','050001','2009010101','010503','健B110/周一1,2节；郁A203/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('pqraa090107','030001','2009010101','010504','广B101/周四8,9节；健A205/周三5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('prsaa090110','120001','2009010101','010505','广A112/周三1,2节；郁B104/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('rstaa090109','160001','2009010101','050105','博B211/周五10,11节；法B103/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('stuaa090104','050002','2009010101','160501','法B212/周二3,4节；博B204/周一4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('tuvaa090106','160002','2009010101','120307','郁C111/周三1,2节；健A305/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('uvwaa090101','160003','2009010101','110103','博A201/周四8,9节；法B203/周三4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('vwxaa090103','160004','2009010101','050402','郁C202/周二10,11节；法B205/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('wxyaa090106','050003','2009010101','160203','博A301/周三8,9节；健A103/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('xyzaa090104','050004','2009010101','050307','法A304/周一1,2节；广B110/周二5,6节');
+
+
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('abcaa090201','010001','2009010102','010101','郁B104/周一3，4节；法A105/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('bcdaa090202','010002','2009010102','010103','郁A110/周一1,2节；广A401/周四8,9节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('cdeaa090203','010003','2009010102','010201','法B102/周五3,4节；畅远313/周二6,7节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('defaa090202','010004','2009010102','010202','广B102/周三6,7节；郁A211/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('efgaa090204','010005','2009010102','010203','法A104/周四8,9节；郁A311/周二4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('fghaa090201','010006','2009010102','010301','畅远102/周三10,11节；法A303/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ghiaa090204','010007','2009010102','010302','郁B101/周一3,4节；博C315/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('hijaa090205','010008','2009010102','010303','广B214/周四10,11节；法B215/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ijkaa090203','010009','2009010102','010403','广B111/周二1,2节；法A315/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('jklaa090201','010010','2009010102','010304','广B103/周一8,9节；郁B304/周二5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('klmaa090203','010011','2009010102','010402','健B104/周五3,4节；健B105/周五4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('lmnaa090204','010012','2009010102','010502','健B102/周四6,7节；畅远103/周二1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('mnoaa090201','010013','2009010102','010501','健B110/周五8,9节；博C104/周四5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('nopaa090205','010014','2009010102','010401','郁B111/周二6,7节；广B103/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('opqaa090208','050001','2009010102','010503','健B110/周一1,2节；郁A203/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('pqraa090207','030001','2009010102','010504','广B101/周四8,9节；健A205/周三5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('prsaa090210','120001','2009010102','010505','广A112/周三1,2节；郁B104/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('rstaa090209','160001','2009010102','050105','博B211/周五10,11节；法B103/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('stuaa090204','050002','2009010102','160501','法B212/周二3,4节；博B204/周一4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('tuvaa090206','160002','2009010102','120307','郁C111/周三1,2节；健A305/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('uvwaa090201','160003','2009010102','110103','博A201/周四8,9节；法B203/周三4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('vwxaa090203','160004','2009010102','050402','郁C202/周二10,11节；法B205/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('wxyaa090206','050003','2009010102','160203','博A301/周三8,9节；健A103/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('xyzaa090204','050004','2009010102','050307','法A304/周一1,2节；广B110/周二5,6节');
+
+
+
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('abcad090101','010001','2009010401','010101','郁B104/周一3，4节；法A105/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('bcdad090102','010002','2009010401','010103','郁A110/周一1,2节；广A401/周四8,9节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('cdead090103','010003','2009010401','010201','法B102/周五3,4节；畅远313/周二6,7节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('defad090102','010004','2009010401','010202','广B102/周三6,7节；郁A211/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('efgad090104','010005','2009010401','010203','法A104/周四8,9节；郁A311/周二4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('fghad090101','010006','2009010401','010301','畅远102/周三10,11节；法A303/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ghiad090104','010007','2009010401','010302','郁B101/周一3,4节；博C315/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('hijad090105','010008','2009010401','010303','广B214/周四10,11节；法B215/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ijkad090103','010009','2009010401','010403','广B111/周二1,2节；法A315/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('jklad090101','010010','2009010401','010304','广B103/周一8,9节；郁B304/周二5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('klmad090103','010011','2009010401','010402','健B104/周五3,4节；健B105/周五4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('lmnad090104','010012','2009010401','010502','健B102/周四6,7节；畅远103/周二1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('mnoad090101','010013','2009010401','010501','健B110/周五8,9节；博C104/周四5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('nopad090105','010014','2009010401','010401','郁B111/周二6,7节；广B103/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('opqad090108','050001','2009010401','010503','健B110/周一1,2节；郁A203/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('pqrad090107','030001','2009010401','010504','广B101/周四8,9节；健A205/周三5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('prsad090110','120001','2009010401','010505','广A112/周三1,2节；郁B104/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('rstad090109','160001','2009010401','050105','博B211/周五10,11节；法B103/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('stuad090104','050002','2009010401','160501','法B212/周二3,4节；博B204/周一4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('tuvad090106','160002','2009010401','120307','郁C111/周三1,2节；健A305/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('uvwad090101','160003','2009010401','110103','博A201/周四8,9节；法B203/周三4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('vwxad090103','160004','2009010401','050402','郁C202/周二10,11节；法B205/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('wxyad090106','050003','2009010401','160203','博A301/周三8,9节；健A103/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('xyzad090104','050004','2009010401','050307','法A304/周一1,2节；广B110/周二5,6节');
+
+
+
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('abcad090201','010001','2009010402','010101','郁B104/周一3，4节；法A105/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('bcdad090202','010002','2009010402','010103','郁A110/周一1,2节；广A401/周四8,9节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('cdead090203','010003','2009010402','010201','法B102/周五3,4节；畅远313/周二6,7节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('defad090202','010004','2009010402','010202','广B102/周三6,7节；郁A211/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('efgad090204','010005','2009010402','010203','法A104/周四8,9节；郁A311/周二4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('fghad090201','010006','2009010402','010301','畅远102/周三10,11节；法A303/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ghiad090204','010007','2009010402','010302','郁B101/周一3,4节；博C315/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('hijad090205','010008','2009010402','010303','广B214/周四10,11节；法B215/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ijkad090203','010009','2009010402','010403','广B111/周二1,2节；法A315/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('jklad090201','010010','2009010402','010304','广B103/周一8,9节；郁B304/周二5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('klmad090203','010011','2009010402','010402','健B104/周五3,4节；健B105/周五4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('lmnad090204','010012','2009010402','010502','健B102/周四6,7节；畅远103/周二1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('mnoad090201','010013','2009010402','010501','健B110/周五8,9节；博C104/周四5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('nopad090205','010014','2009010402','010401','郁B111/周二6,7节；广B103/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('opqad090208','050001','2009010402','010503','健B110/周一1,2节；郁A203/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('pqrad090207','030001','2009010402','010504','广B101/周四8,9节；健A205/周三5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('prsad090210','120001','2009010402','010505','广A112/周三1,2节；郁B104/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('rstad090209','160001','2009010402','050105','博B211/周五10,11节；法B103/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('stuad090204','050002','2009010402','160501','法B212/周二3,4节；博B204/周一4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('tuvad090206','160002','2009010402','120307','郁C111/周三1,2节；健A305/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('uvwad090201','160003','2009010402','110103','博A201/周四8,9节；法B203/周三4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('vwxad090203','160004','2009010402','050402','郁C202/周二10,11节；法B205/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('wxyad090206','050003','2009010402','160203','博A301/周三8,9节；健A103/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('xyzad090204','050004','2009010402','050307','法A304/周一1,2节；广B110/周二5,6节');
+
+
+
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('abcab090201','010001','2009010202','010101','郁B104/周一3，4节；法A105/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('bcdab090202','010002','2009010202','010103','郁A110/周一1,2节；广A401/周四8,9节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('cdeab090203','010003','2009010202','010201','法B102/周五3,4节；畅远313/周二6,7节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('defab090202','010004','2009010202','010202','广B102/周三6,7节；郁A211/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('efgab090204','010005','2009010202','010203','法A104/周四8,9节；郁A311/周二4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('fghab090201','010006','2009010202','010301','畅远102/周三10,11节；法A303/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ghiab090204','010007','2009010202','010302','郁B101/周一3,4节；博C315/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('hijab090205','010008','2009010202','010303','广B214/周四10,11节；法B215/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('ijkab090203','010009','2009010202','010403','广B111/周二1,2节；法A315/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('jklab090201','010010','2009010202','010304','广B103/周一8,9节；郁B304/周二5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('klmab090203','010011','2009010202','010402','健B104/周五3,4节；健B105/周五4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('lmnab090204','010012','2009010202','010502','健B102/周四6,7节；畅远103/周二1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('mnoab090201','010013','2009010202','010501','健B110/周五8,9节；博C104/周四5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('nopab090205','010014','2009010202','010401','郁B111/周二6,7节；广B103/周一1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('opqab090208','050001','2009010202','010503','健B110/周一1,2节；郁A203/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('pqrab090207','030001','2009010202','010504','广B101/周四8,9节；健A205/周三5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('prsab090210','120001','2009010202','010505','广A112/周三1,2节；郁B104/周五5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('rstab090209','160001','2009010202','050105','博B211/周五10,11节；法B103/周三1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('stuab090204','050002','2009010202','160501','法B212/周二3,4节；博B204/周一4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('tuvab090206','160002','2009010202','120307','郁C111/周三1,2节；健A305/周一5,6节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('uvwab090201','160003','2009010202','110103','博A201/周四8,9节；法B203/周三4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('vwxab090203','160004','2009010202','050402','郁C202/周二10,11节；法B205/周五1,2节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('wxyab090206','050003','2009010202','160203','博A301/周三8,9节；健A103/周四4,3节');
+insert into 开课hjh(开课编号hjh,课程编号hjh,班级编号hjh,教师编号hjh,上课时间地点hjh) values('xyzab090204','050004','2009010202','050307','法A304/周一1,2节；广B110/周二5,6节');
+
+
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('ie_01','自动化','zjut_ie');
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('ie_02','电气','zjut_ie');
+insert into 专业hjh(专业编号hjh,专业名称hjh,学院编号hjh) values('fl_02','英语','zjut_fl');
+
+
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009040101',0901,'ie_01');
+insert into 班级hjh(班级编号hjh,班级序号hjh,专业编号hjh) values('2009040102',0902,'ie_01');

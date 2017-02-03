@@ -1,0 +1,61 @@
+
+/*  1  */
+create trigger upd_grade on 学生hjh
+for update,insert 
+as
+	update 学生hjh
+	set 已修学分hjh = (
+		select sum(学分hjh)
+		from 课程hjh
+		where  课程编号hjh in
+		(
+			select 课程编号hjh
+			from 开课hjh,选修hjh
+			where 开课hjh.开课编号hjh = 选修hjh.开课编号hjh and 选修hjh.成绩hjh >=60 and 选修hjh.学生编号hjh in
+			(
+				select 学生编号hjh from inserted
+			)
+		)
+	)
+	where 学生hjh.学生编号hjh in
+	(
+		select 学生编号hjh
+		from inserted
+	)
+
+	
+
+create trigger upd_grade on 学生hjh
+for update,insert 
+as
+	update 学生hjh
+	set 已修学分hjh = (
+		select sum(学分hjh)
+		from 课程hjh
+		where  课程编号hjh in
+		(
+			select 课程编号hjh
+			from 开课hjh,选修hjh
+			where 开课hjh.开课编号hjh = 选修hjh.开课编号hjh and 选修hjh.成绩hjh >=60 and 选修hjh.学生编号hjh in
+			(
+				select 学生编号hjh from INSERTED
+			)
+		)
+	)
+	where 学生hjh.学生编号hjh in
+	(
+		select 学生编号hjh
+		from INSERTED
+	)
+
+
+/* 2  */
+create trigger del_Stu on 学生hjh
+for delete
+as 
+	delete 选修hjh
+	from 选修hjh a, Deleted d
+	where  a.学生编号hjh = d.学生编号hjh
+	
+	
+	

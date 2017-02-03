@@ -1,0 +1,111 @@
+/*
+	实体型	
+
+*/
+
+create table 系统管理员hjh(
+用户名hjh char(20) primary key,
+登录密码hjh char(20) default('012345'),
+权限级别hjh int default(5)
+)
+
+create table 学院hjh(
+学院编号hjh char(10) primary key,
+学院名称hjh char(20) not null,
+学院简介hjh text
+)
+
+create table 专业hjh(
+专业编号hjh char(10) primary key,
+专业名称hjh char(20) not null,
+学院编号hjh char(10),
+毕业最少学分hjh int,
+constraint PK_zc foreign key(学院编号hjh) references 学院hjh
+)
+
+create table 班级hjh(
+班级编号hjh char(10) primary key,
+班级序号hjh int not null,
+专业编号hjh char(10) not null,
+constraint PK_bz foreign key(专业编号hjh) references 专业hjh
+)
+
+create table 课程hjh(
+课程编号hjh char(10) primary key,
+课程名称hjh char(20) not null,
+学院编号hjh char(10) ,
+考核方式hjh char(10) ,
+学时hjh int ,
+学分hjh int,
+课程介绍hjh text
+constraint PK_CC foreign key(学院编号hjh) references 学院hjh
+)
+
+create table 学生hjh(
+学生编号hjh char(12) primary key,
+姓名hjh char(20) not null,
+性别hjh char(10),
+出生年月hjh char(20),
+生源地hjh char(20),
+联系电话hjh char(20),
+班级编号hjh char(10),
+已修学分hjh int,
+平均绩点hjh float,
+权限级别hjh int default(1),
+登录密码hjh char(20) default('123456')
+constraint PK_xb foreign key(班级编号hjh ) references 班级hjh
+)
+
+create table 教师hjh(
+教师编号hjh char(10) primary key,
+姓名hjh char(20) not null,
+性别hjh char(10),
+出生年月hjh char(20),
+联系电话hjh char(20),
+电子邮箱hjh char(30),
+学历hjh char(20),
+职称hjh char(20),
+学院编号hjh char(10),
+权限级别hjh int default(2),
+登录密码hjh char(20) default('234567')
+constraint PK_jx foreign key(学院编号hjh) references 学院hjh
+)
+
+/*
+
+	联系
+
+*/
+
+
+create table 开设hjh(
+专业编号hjh char(10),
+课程编号hjh char(10),
+开课学期hjh char(20),
+primary key(专业编号hjh,课程编号hjh),
+constraint pk_kz foreign key(专业编号hjh) references 专业hjh,
+constraint pk_kszc foreign key(课程编号hjh) references 课程hjh
+)
+
+create table 开课hjh(
+开课编号hjh char(12) primary key,
+上课时间地点hjh char(60),
+评定等级hjh char(4),
+教师编号hjh char(10) not null,
+班级编号hjh char(10) not null,
+课程编号hjh char(10) not null,
+constraint pk_kj foreign key(教师编号hjh) references 教师hjh,
+constraint pk_kb foreign key(班级编号hjh) references 班级hjh,
+constraint pk_kk foreign key(课程编号hjh) references 课程hjh
+)
+
+create table 选修hjh(
+开课编号hjh char(12) ,
+学生编号hjh char(12) ,
+成绩hjh float,
+教学评定hjh char(4),
+primary key(开课编号hjh,学生编号hjh),
+constraint pk_xk foreign key(开课编号hjh) references 开课hjh,
+constraint pk_xx foreign key(学生编号hjh) references 学生hjh
+)
+

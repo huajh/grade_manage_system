@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FADBE915-B33A-4DB1-A8B1-3C9AE44A647D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GradeManageSystem</RootNamespace>
+    <AssemblyName>GradeManageSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCourse.Designer.cs">
+      <DependentUpon>addCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addCourseSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCourseSub.Designer.cs">
+      <DependentUpon>addCourseSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPlan.Designer.cs">
+      <DependentUpon>addPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudent.Designer.cs">
+      <DependentUpon>addStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudentsSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudentsSub.Designer.cs">
+      <DependentUpon>addStudentsSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTeacher.Designer.cs">
+      <DependentUpon>addTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTeacherSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTeacherSub.Designer.cs">
+      <DependentUpon>addTeacherSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInfo.Designer.cs">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTeacherInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTeacherInfo.Designer.cs">
+      <DependentUpon>EditTeacherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCourse.Designer.cs">
+      <DependentUpon>FindCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindStudent.Designer.cs">
+      <DependentUpon>FindStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindTeacher.Designer.cs">
+      <DependentUpon>FindTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="glyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glyInfo.Designer.cs">
+      <DependentUpon>glyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewClassCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewClassCourse.Designer.cs">
+      <DependentUpon>NewClassCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfDevelopPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfDevelopPlan.Designer.cs">
+      <DependentUpon>ProfDevelopPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlConnect.cs" />
+    <Compile Include="StudentGradeResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGradeResult.Designer.cs">
+      <DependentUpon>StudentGradeResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInfo.Designer.cs">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMain.Designer.cs">
+      <DependentUpon>StudentMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherAddScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherAddScore.Designer.cs">
+      <DependentUpon>TeacherAddScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInfoCentre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherInfoCentre.Designer.cs">
+      <DependentUpon>TeacherInfoCentre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherQueryGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherQueryGrade.Designer.cs">
+      <DependentUpon>TeacherQueryGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherQueryPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherQueryPost.Designer.cs">
+      <DependentUpon>TeacherQueryPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherUnPassedTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherUnPassedTable.Designer.cs">
+      <DependentUpon>TeacherUnPassedTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMain.Designer.cs">
+      <DependentUpon>TeacherMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage.Designer.cs">
+      <DependentUpon>SystemManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addCourse.resx">
+      <DependentUpon>addCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addCourseSub.resx">
+      <DependentUpon>addCourseSub.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPlan.resx">
+      <DependentUpon>addPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudent.resx">
+      <DependentUpon>addStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudentsSub.resx">
+      <DependentUpon>addStudentsSub.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTeacher.resx">
+      <DependentUpon>addTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTeacherSub.resx">
+      <DependentUpon>addTeacherSub.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInfo.resx">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTeacherInfo.resx">
+      <DependentUpon>EditTeacherInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindCourse.resx">
+      <DependentUpon>FindCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindStudent.resx">
+      <DependentUpon>FindStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindTeacher.resx">
+      <DependentUpon>FindTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="glyInfo.resx">
+      <DependentUpon>glyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewClassCourse.resx">
+      <DependentUpon>NewClassCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfDevelopPlan.resx">
+      <DependentUpon>ProfDevelopPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentGradeResult.resx">
+      <DependentUpon>StudentGradeResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInfo.resx">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMain.resx">
+      <DependentUpon>StudentMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherAddScore.resx">
+      <DependentUpon>TeacherAddScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInfoCentre.resx">
+      <DependentUpon>TeacherInfoCentre.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherQueryGrade.resx">
+      <DependentUpon>TeacherQueryGrade.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherQueryPost.resx">
+      <DependentUpon>TeacherQueryPost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherUnPassedTable.resx">
+      <DependentUpon>TeacherUnPassedTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMain.resx">
+      <DependentUpon>TeacherMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage.resx">
+      <DependentUpon>SystemManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_pic .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_2637j94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gabi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kuanpin13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_2710l94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\12.jpg" />
+    <None Include="Resources\1234.jpg" />
+    <Content Include="Resources\13.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\9.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\7.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\d.jpg" />
+    <Content Include="Resources\ff.jpg" />
+    <None Include="Resources\lan.jpg" />
+    <None Include="Resources\mmxg.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

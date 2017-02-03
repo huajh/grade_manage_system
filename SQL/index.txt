@@ -1,0 +1,11 @@
+create unique index gly_num on 系统管理员hjh(用户名hjh);
+create unique index xy_num on 学院hjh(学院编号hjh);
+create unique index zy_num on 专业hjh(专业编号hjh);
+create unique index bj_num on 班级hjh(班级编号hjh);
+create unique index kc_num on 课程hjh(课程编号hjh);
+create unique index xs_num on 学生hjh(学生编号hjh);
+create unique index js_num on 教师hjh(教师编号hjh);
+
+create unique index kk_num on 开课hjh(开课编号hjh);
+
+create clustered index 

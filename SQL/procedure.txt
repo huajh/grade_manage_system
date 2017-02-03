@@ -1,0 +1,21 @@
+create procedure Delete_Graduates
+@Min_Credit int,
+@Min_GPA double
+
+as 
+	declare @学生编号hjh char(12)
+	declare CurRowCursor cursor for
+	select 学生编号hjh from 学生hjh where 已修学分hjh >=@Min_Credit and 平均绩点hjh >=@Min_GPA
+	open CurRowCursor
+	fetch CurRowCursor into @学生编号hjh
+	while @@FETCH_STATUS = 0
+	begin 
+	delete from 选修hjh where 学生编号hjh = @学生编号hjh
+	delete from 学生hjh where 学生编号hjh = @学生编号hjh
+	close CurRowCursor
+	open CurRowCursor
+	fetch CurRowCursor into @学生编号hjh
+	end
+	close CurRowCursor
+	deallocate CurRowCursor
+	

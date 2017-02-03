@@ -1,0 +1,11 @@
+
+alter table 选修hjh
+add constraint px_xx
+foreign key(学生编号hjh) references 学生hjh(学生编号hjh)
+on delete cascade
+
+alter table 选修hjh
+add constraint px_xk
+foreign key(开课编号hjh) references 开课hjh(开课编号hjh)
+on delete cascade
+

@@ -1,0 +1,150 @@
+
+
+
+/*	
+	查询开课情况
+
+*/
+
+select a.开课编号hjh,d.专业名称hjh,c.班级序号hjh,e.课程名称hjh,b.姓名hjh,a.开课学期hjh,a.上课时间地点hjh,a.评定等级hjh
+from 开课hjh a,教师hjh b ,班级hjh c ,专业hjh d ,课程hjh e
+where a.班级编号hjh='2009010401' and b.教师编号hjh = a.教师编号hjh and a.班级编号hjh = c.班级编号hjh 
+		and c.专业编号hjh = d.专业编号hjh and a.课程编号hjh = e.课程编号hjh
+order by a.开课学期hjh
+
+
+/*
+	班级课程同步
+
+
+*/
+
+
+select a.开课编号hjh ,b.姓名hjh,e.课程名称hjh ,f.专业名称hjh,c.班级序号hjh
+from 选修hjh a ,学生hjh b,班级hjh c,开课hjh d,课程hjh e,专业hjh f
+where a.学生编号hjh = b.学生编号hjh and b.班级编号hjh = c.班级编号hjh 
+	and a.开课编号hjh = d.开课编号hjh and d.课程编号hjh = e.课程编号hjh
+	and c.专业编号hjh = f.专业编号hjh
+	and b.班级编号hjh = '2009010402'
+order by b.姓名hjh
+
+
+/*
+	删除班级课程同步
+
+*/
+
+delete 
+from 选修hjh 
+where 选修hjh.学生编号hjh in
+	(
+		select 学生编号hjh
+		from 学生hjh a
+		where a.班级编号hjh = '2009010203'
+	)
+	
+
+/*
+	查询一个班的课程同步情况
+
+
+*/	
+select a.开课编号hjh ,b.姓名hjh,e.课程名称hjh ,f.专业名称hjh,c.班级序号hjh
+from 选修hjh a ,学生hjh b,班级hjh c,开课hjh d,课程hjh e,专业hjh f
+where a.学生编号hjh = b.学生编号hjh and b.班级编号hjh = c.班级编号hjh 
+	and a.开课编号hjh = d.开课编号hjh and d.课程编号hjh = e.课程编号hjh
+	and c.专业编号hjh = f.专业编号hjh
+	and b.班级编号hjh = '2009010203'
+order by b.姓名hjh	
+
+
+
+/*
+	教师的开课情况
+*/
+
+select a.开课编号hjh,d.课程名称hjh,c.专业名称hjh,b.班级序号hjh,d.学分hjh,d.考核方式hjh,e.开课学期hjh,a.评定等级hjh
+from 开课hjh a ,班级hjh b,专业hjh c,课程hjh d ,开设hjh e
+where a.教师编号hjh = '010101' and a.班级编号hjh = b.班级编号hjh and b.专业编号hjh = c.专业编号hjh
+and a.课程编号hjh = d.课程编号hjh and e.课程编号hjh = a.课程编号hjh and e.专业编号hjh = b.专业编号hjh
+
+
+/*
+	学生成绩查询
+
+*/
+
+select h.课程名称hjh,i.姓名hjh '授课教师hjh',h.学分hjh,h.考核方式hjh,e.开课学期hjh,g.成绩hjh
+from 学生hjh b,班级hjh c,开设hjh e,开课hjh f,选修hjh g,课程hjh h,教师hjh i
+where b.学生编号hjh = '200901010101' 
+	and b.班级编号hjh = c.班级编号hjh and c.专业编号hjh = e.专业编号hjh
+	and e.开课学期hjh like '2010-2011%'
+	and e.课程编号hjh = f.课程编号hjh and b.班级编号hjh = f.班级编号hjh 
+	and g.开课编号hjh = f.开课编号hjh and g.学生编号hjh = b.学生编号hjh
+	and f.课程编号hjh = h.课程编号hjh and f.教师编号hjh = i.教师编号hjh
+	and g.成绩hjh >=0
+
+/*
+	学生专业教学计划
+
+*/
+
+
+	
+select h.课程名称hjh,h.学分hjh,h.学时hjh,h.考核方式hjh,e.开课学期hjh,h.课程介绍hjh,g.成绩hjh,g.教学评定hjh
+from 学生hjh b,班级hjh c,开设hjh e,课程hjh h,选修hjh g,开课hjh k
+where b.学生编号hjh = '200901010101' 
+	and b.班级编号hjh = c.班级编号hjh 
+	and c.专业编号hjh = e.专业编号hjh
+	and e.课程编号hjh = h.课程编号hjh
+	and g.学生编号hjh = b.学生编号hjh
+	and k.班级编号hjh = c.班级编号hjh 
+	and k.课程编号hjh = h.课程编号hjh 
+	and k.开课编号hjh = g.开课编号hjh
+	order by e.开课学期hjh
+	
+
+
+/*
+	某班某学期绩点大于3.5
+
+*/
+
+
+select b.学生编号hjh,sum((g.成绩hjh-50)*h.学分hjh)/(SUM(h.学分hjh)*10)
+from 学生hjh b,班级hjh c,开设hjh e,开课hjh f,选修hjh g,课程hjh h,教师hjh i
+where 
+	b.班级编号hjh = c.班级编号hjh and c.专业编号hjh = e.专业编号hjh
+	and e.开课学期hjh like '2010-2011%'
+	and e.课程编号hjh = f.课程编号hjh and b.班级编号hjh = f.班级编号hjh 
+	and g.开课编号hjh = f.开课编号hjh and g.学生编号hjh = b.学生编号hjh
+	and f.课程编号hjh = h.课程编号hjh and f.教师编号hjh = i.教师编号hjh
+	and b.班级编号hjh = (
+			select b.班级编号hjh
+			from 学生hjh a,班级hjh b
+			where a.学生编号hjh = '200901010101' and a.班级编号hjh = b.班级编号hjh
+			)
+group by b.学生编号hjh,g.成绩hjh
+having (g.成绩hjh >=60 and sum((g.成绩hjh-50)*h.学分hjh)/(SUM(h.学分hjh)*10) >3.5)
+			
+			
+
+/*
+某专业某学期绩点大于3.5
+
+*/
+select b.学生编号hjh,sum((g.成绩hjh-50)*h.学分hjh)/(SUM(h.学分hjh)*10)
+from 学生hjh b,班级hjh c,开设hjh e,开课hjh f,选修hjh g,课程hjh h,教师hjh i
+where 
+	b.班级编号hjh = c.班级编号hjh and c.专业编号hjh = e.专业编号hjh
+	and e.开课学期hjh like '2010-2011%'
+	and e.课程编号hjh = f.课程编号hjh and b.班级编号hjh = f.班级编号hjh 
+	and g.开课编号hjh = f.开课编号hjh and g.学生编号hjh = b.学生编号hjh
+	and f.课程编号hjh = h.课程编号hjh and f.教师编号hjh = i.教师编号hjh
+	and c.专业编号hjh = (
+			select b.专业编号hjh
+			from 学生hjh a,班级hjh b
+			where a.学生编号hjh = '200901010101' and a.班级编号hjh = b.班级编号hjh
+			)
+group by b.学生编号hjh,g.成绩hjh
+having (g.成绩hjh >=60 and sum((g.成绩hjh-50)*h.学分hjh)/(SUM(h.学分hjh)*10) >3.5)
